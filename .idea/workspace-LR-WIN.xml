@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="128a8d64-daa3-4fa0-9ca8-a43f08718c04" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keras/cifar2.py" beforeDir="false" afterPath="$PROJECT_DIR$/keras/cifar2.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="545827c6-b7b3-4836-a417-3d866a4d8a0f" />
+  <component name="ProjectId" id="1bvu43poDNEnBrK6uiorO6whk2E" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/keras" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;!chcp 65001&#10;" module-name="tf2" is-module-sdk="true">
+        <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;!chcp 65001&#10;" />
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="tf2" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\myprojects\PyProjects\tf2\keras" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\myprojects\PyProjects\tf2\keras\datasets" />
+      <recent name="C:\myprojects\PyProjects\tf2\keras\sda" />
+      <recent name="C:\myprojects\PyProjects\tf2\keras" />
+      <recent name="C:\myprojects\PyProjects\tf2\keras\data" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.cifar2">
+    <configuration name="Test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="tf2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="tf2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cifar2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="tf2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/keras" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/keras/cifar2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cnn" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="tf2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/keras" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/keras/cnn.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="titanic" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="tf2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/keras" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/keras/titanic.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="titanic_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="tf2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/keras" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/keras/titanic_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.cifar2" />
+        <item itemvalue="Python.Test" />
+        <item itemvalue="Python.titanic" />
+        <item itemvalue="Python.titanic_2" />
+        <item itemvalue="Python.cnn" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="128a8d64-daa3-4fa0-9ca8-a43f08718c04" name="Default Changelist" comment="" />
+      <created>1589524693096</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589524693096</updated>
+      <workItem from="1589524694578" duration="2141000" />
+      <workItem from="1589597569814" duration="16378000" />
+      <workItem from="1589642093871" duration="4151000" />
+      <workItem from="1589717349504" duration="1239000" />
+      <workItem from="1589774126497" duration="17934000" />
+      <workItem from="1589801028816" duration="11277000" />
+      <workItem from="1589968603788" duration="12135000" />
+      <workItem from="1590047412764" duration="5759000" />
+      <workItem from="1590067298251" duration="9071000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="582" y="183" key="#Inspections" timestamp="1589781103308">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="582" y="183" key="#Inspections/0.0.1920.1040@0.0.1920.1040" timestamp="1589781103308" />
+    <state x="410" y="106" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589606430238">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="410" y="106" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589606430238" />
+    <state x="634" y="293" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1589798395549">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="634" y="293" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1589798395549" />
+    <state x="50" y="112" key="#xdebugger.XInspectDialog" timestamp="1589811795139">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="50" y="112" key="#xdebugger.XInspectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589811795139" />
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1590077246571">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590077246571" />
+    <state x="687" y="216" key="FileChooserDialogImpl" timestamp="1590077242055">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="687" y="216" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1590077242055" />
+    <state x="806" y="399" key="Github.ShareDialog" timestamp="1590072381287">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="806" y="399" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590072381287" />
+    <state x="668" y="22" width="571" height="929" key="Github.UntrackedFilesDialog" timestamp="1590072547046">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="668" y="22" width="571" height="929" key="Github.UntrackedFilesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590072547046" />
+    <state width="1865" height="262" key="GridCell.Tab.0.bottom" timestamp="1589820151585">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589820151585" />
+    <state width="1865" height="262" key="GridCell.Tab.0.center" timestamp="1589820151585">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="262" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589820151585" />
+    <state width="1865" height="262" key="GridCell.Tab.0.left" timestamp="1589820151585">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="262" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589820151585" />
+    <state width="1865" height="262" key="GridCell.Tab.0.right" timestamp="1589820151585">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="262" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589820151585" />
+    <state width="1865" height="325" key="GridCell.Tab.1.bottom" timestamp="1589801006373">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="325" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1589801006373" />
+    <state width="1865" height="325" key="GridCell.Tab.1.center" timestamp="1589801006373">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="325" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1589801006373" />
+    <state width="1865" height="325" key="GridCell.Tab.1.left" timestamp="1589801006373">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="325" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1589801006373" />
+    <state width="1865" height="325" key="GridCell.Tab.1.right" timestamp="1589801006373">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1865" height="325" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1589801006373" />
+    <state x="344" y="78" key="SettingsEditor" timestamp="1590076751326">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="344" y="78" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1590076751326" />
+    <state x="791" y="411" key="VCS.ChangelistChooser" timestamp="1590078232863">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="791" y="411" key="VCS.ChangelistChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1590078232863" />
+    <state x="452" y="183" key="Vcs.Push.Dialog.v2" timestamp="1590074770246">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="183" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1590074770246" />
+    <state x="794" y="329" key="cloudConfig.SelfSettingsDialog" timestamp="1589608126397">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="794" y="329" key="cloudConfig.SelfSettingsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1589608126397" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1590074789489">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1590074789489" />
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1589643248973">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="539" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1589643248973" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/tf2$titanic_2.coverage" NAME="titanic_2 Coverage Results" MODIFIED="1589800929848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/keras" />
+  </component>
+</project>
