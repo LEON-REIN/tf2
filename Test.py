@@ -10,11 +10,28 @@ import tensorflow as tf
 import numpy as np
 import matplotlib.pyplot as plt
 
-(train_data, train_label), (_, _) = tf.keras.datasets.mnist.load_data()
-train_data = np.expand_dims(train_data.astype(np.float32) / 255.0, axis=-1)  # [60000, 28, 28, 1]
-mnist_dataset = tf.data.Dataset.from_tensor_slices((train_data, train_label))
-for image, label in mnist_dataset:
-    plt.title(label.numpy())
-    plt.imshow(image.numpy()[:, :, :])
-    plt.show()
-    break
+
+'''
+It shows what Dataset contains, as well as some methods -- from_tensor_slices(), take()
+                                                           batch(), shuffle(), prefetch()  
+'''
+# dataset = tf.data.Dataset.from_tensor_slices(
+#     {
+#         "a": np.array([1.0, 2.0, 3.0, 4.0, 5.0]),
+#         "b": np.random.uniform(size=(5, 3))
+#     })
+
+# dataset = tf.data.Dataset.from_tensor_slices(np.random.uniform(size=(5, 2)))
+
+dataset = tf.data.Dataset.from_tensor_slices(
+    (np.array([1.0, 2.0, 3.0, 4.0, 5.0]), np.random.uniform(size=(5, 2))))
+dataset = dataset.batch(3)
+# dataset = dataset.shuffle(buffer_size=2)
+# dataset = dataset.prefetch(2)
+dataset = dataset.take(1)  # Only take 1 batch
+for a, b in dataset.enumerate():
+    print('?????', a, "HHH", b)
+print('*****************')
+aa = list(dataset.as_numpy_iterator())
+print(aa)
+
