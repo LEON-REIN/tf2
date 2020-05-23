@@ -1,7 +1,7 @@
 # @.@ coding:utf-8 ^-^
 # @Author   : Leon Rein
 # @Time     : 2020-05-15  ~  14:31
-# @File     : cnn.py
+# @File     : mnist_cnn.py
 # @Software : PyCharm
 # @Notice   : It's a WINDOWS version!
 #             Codes are running under python3.7 by keras with a tensorflow-gpu2.1 backend.
