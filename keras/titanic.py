@@ -95,7 +95,7 @@ ans_test = test_answer_raw['Survived'].values  # Array
 tf.keras.backend.clear_session()
 
 model = models.Sequential()
-model.add(layers.Dense(20, activation='relu', input_shape=(to_train.shape[1],)))  # The shape of x has 15 columns
+model.add(layers.Dense(20, activation='relu', input_shape=(to_train.shape[1],)))
 model.add(layers.Dense(10, activation='relu'))
 model.add(layers.Dense(1, activation='sigmoid'))
 # model.summary()

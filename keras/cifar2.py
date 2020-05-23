@@ -6,6 +6,7 @@
 # @Notice   : It's a WINDOWS version!
 #             训练一个模型来对飞机airplane和机动车automobile两种图片进行分类
 #             ipython 编码问题: 执行 `!chcp 65001` 可以添加至 Setting-Console-Python Console-Starting Script
+#             If your accuracy is always to be 0.5, RUN AGAIN or for several times.
 
 
 import tensorflow as tf
@@ -65,26 +66,44 @@ ds_test = tf.data.Dataset.list_files(r"datasets\cifar2_datasets\test\*\*.jpg") \
 # print(list(ds_train.take(1).as_numpy_iterator())[0][1])
 
 '''
-3. Keras Modeling (Using  Functional APIs)
+3. Keras Modeling
 '''
 
 tf.keras.backend.clear_session()  # Clear sessions
 
+'''3.1 Functional -- More Flexible'''
 inputs = layers.Input(shape=(32, 32, 3))  # The shape of input tensor
-x = layers.Conv2D(32, kernel_size=(3, 3))(inputs)
-x = layers.MaxPool2D()(x)
-x = layers.Conv2D(64, kernel_size=(5, 5))(x)
-x = layers.MaxPool2D()(x)
-x = layers.Dropout(rate=0.1)(x)
+# The actual kernel_size is (3, 3, 3). They move in 2 dimensions.
+x = layers.Conv2D(32, kernel_size=(3, 3), activation="linear")(inputs)
+# x = layers.Conv3D(32, kernel_size=(3, 3, 3))(inputs)  # It's WRONG!
+# x = layers.BatchNormalization()(x)
+x = layers.MaxPool2D(pool_size=(2, 2))(x)
+x = layers.Conv2D(64, kernel_size=(5, 5), activation="linear")(x)
+x = layers.MaxPool2D(pool_size=(2, 2))(x)
+x = layers.Dropout(rate=0.01)(x)
 x = layers.Flatten()(x)
 x = layers.Dense(32, activation='relu')(x)
 outputs = layers.Dense(1, activation='sigmoid')(x)
-
 model = models.Model(inputs=inputs, outputs=outputs)
-# model.summary()
 
+# '''3.2 Sequential -- Easier'''
+# model = tf.keras.Sequential(
+#     [
+#         tf.keras.Input(shape=(32, 32, 3)),
+#         layers.Conv2D(32, kernel_size=(3, 3), activation="linear"),
+#         layers.MaxPooling2D(pool_size=(2, 2)),
+#         layers.Conv2D(64, kernel_size=(5, 5), activation="linear"),
+#         layers.MaxPooling2D(pool_size=(2, 2)),
+#         layers.Dropout(0.01),
+#         layers.Flatten(),
+#         layers.Dense(32, activation="relu"),
+#         layers.Dense(1, activation="sigmoid"),
+#     ]
+# )
+
+# model.summary()
 model.compile(
-    optimizer=tf.keras.optimizers.Adam(learning_rate=0.001),
+    optimizer=tf.keras.optimizers.Adam(learning_rate=0.01),
     loss=tf.keras.losses.binary_crossentropy,  # Or 'binary_crossentropy'
     metrics=["accuracy"]
 )
@@ -100,9 +119,8 @@ tensorboard_callback = tf.keras.callbacks.TensorBoard(logdir, histogram_freq=1)
 history_fit = model.fit(ds_train,
                         epochs=10,
                         validation_data=ds_test,
-                        callbacks=[tensorboard_callback],  # Called on batch ends or certain timepoint
+                        callbacks=[tensorboard_callback],  # Called on batch ends or other certain timepoint
                         workers=4,
-                        use_multiprocessing=True
                         )
 
 '''
@@ -131,8 +149,8 @@ def plot_metric(history, indicator):
     plt.show()
 
 
-plot_metric(history_fit, "loss")
-plot_metric(history_fit, "accuracy")
+# plot_metric(history_fit, "loss")
+# plot_metric(history_fit, "accuracy")
 evaluation = model.evaluate(ds_test, workers=4)
 print("Loss: {loss}  Accuracy: {acc}".format(loss=evaluation[0], acc=evaluation[1]))
 
@@ -150,12 +168,12 @@ answer = model.predict(ds_test)
 '''
 
 # # # Save model weights only
-# # model.save_weights(r'cifar2\tf_model_weights.ckpt', save_format="tf")
+# # model.save_weights(r'datasets\cifar2_saved\tf_model_weights.ckpt', save_format="tf")
 #
 # # Save the whole model
-# model.save(r'cifar2\tf_model_savedmodel', save_format="tf")
+# model.save(r'datasets\cifar2_saved\tf_model_savedmodel', save_format="tf")
 
 # # Restore the model
-# model_loaded = tf.keras.models.load_model(r'cifar2\tf_model_savedmodel')
+# model_loaded = tf.keras.models.load_model(r'datasets\cifar2_saved\tf_model_savedmodel')
 # evaluation = model.evaluate(ds_test, workers=4)
 # print("Loss: {loss}  Accuracy: {acc}".format(loss=evaluation[0], acc=evaluation[1]))
