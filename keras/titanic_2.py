@@ -13,17 +13,17 @@ import os
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 os.environ["TF_CPP_MIN_LOG_LEVEL"] = '2'  # Warnings or Errors ONLY  
 
-dftest_raw = pd.read_csv(r'datasets/titanic\test.csv')
-test_answer_raw = pd.read_csv(r'datasets/titanic\gender_submission.csv')
+dftest_raw = pd.read_csv(r'datasets\titanic\test.csv')
+test_answer_raw = pd.read_csv(r'datasets\titanic\gender_submission.csv')
 
 
 # A Function to Preprocess datasets sets
 def preprocessing(dfdata):
     dfresult = pd.DataFrame()
 
-    # Pclass
-    dfPclass = pd.get_dummies(dfdata['Pclass'], prefix='Pclass_')  # One-hot
-    dfresult = pd.concat([dfresult, dfPclass], axis=1)  # Merge arrays
+    # # Pclass
+    # dfPclass = pd.get_dummies(dfdata['Pclass'], prefix='Pclass_')  # One-hot
+    # dfresult = pd.concat([dfresult, dfPclass], axis=1)  # Merge arrays
 
     # Sex
     dfSex = pd.get_dummies(dfdata['Sex'])
@@ -50,7 +50,7 @@ def preprocessing(dfdata):
 
 to_test = preprocessing(dftest_raw)  # Pandas DataFrame
 
-model_loaded = models.load_model(r'datasets/titanic\tf_model_savedmodel')
+model_loaded = models.load_model(r'datasets\titanic\tf_model_savedmodel')
 answer = model_loaded.predict_classes(to_test)
 
 test_answer_raw['Survived'] = answer

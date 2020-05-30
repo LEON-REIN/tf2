@@ -146,7 +146,7 @@ print("Loss: {loss}  Accuracy: {acc}".format(loss=evaluation[0], acc=evaluation[
 # print(model.predict_classes(to_test[0:10]))  # the class they belongs to
 answer = model.predict_classes(to_test)
 test_answer_raw['Survived'] = answer
-test_answer_raw.to_csv(r".\ans.csv", index=False)
+# test_answer_raw.to_csv(r".\ans.csv", index=False)
 
 # '''
 # 7. Save the Model
