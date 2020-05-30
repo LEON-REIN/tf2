@@ -37,8 +37,9 @@ def load_image(img_path, size=(32, 32)):
 
 
 # 使用并行化预处理 num_parallel_calls 和预存数据 prefetch 来提升性能
+# ds_train: use "print(list(dataset.as_numpy_iterator()))" to show what it contains;
 # map: to accelerate; shuffle: buffer_size need to be large enough; batch: to combine some data into a single batch;
-# prefetch: to improves latency and throughput, using additional memory
+# prefetch: to improves latency and throughput, using additional memory.
 ds_train = tf.data.Dataset.list_files(r"datasets\cifar2_datasets\train\*\*.jpg") \
     .map(load_image, num_parallel_calls=tf.data.experimental.AUTOTUNE) \
     .shuffle(buffer_size=2000) \
