@@ -1,6 +1,6 @@
 # @.@ coding: utf-8 ^-^
 # @Author   : Leon Rein
-# @Time     : 2020-05-20  ~  20:14 
+# @Time     : 2020-05-20  ~  20:14
 # @File     : cifar2.py
 # @Software : PyCharm
 # @Notice   : It's a WINDOWS version!
@@ -32,7 +32,8 @@ def load_image(img_path, size=(32, 32)):
         else tf.constant(0, tf.int8)  # automobile labeled as 1, while airplane represents 0
     imgs = tf.io.read_file(img_path)
     imgs = tf.image.decode_jpeg(imgs)  # jpeg format!
-    imgs = tf.image.resize(imgs, size) / 255.0  # Resize images to 'size' and normalization
+    # Resize images to 'size' and normalization
+    imgs = tf.image.resize(imgs, size) / 255.0
     return imgs, labels
 
 
@@ -110,7 +111,7 @@ model.compile(
 )
 
 '''
-4. Train the Model
+4. Train the Model(With model.fit())
 '''
 
 stamp = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")  # Time stamp
@@ -120,7 +121,8 @@ tensorboard_callback = tf.keras.callbacks.TensorBoard(logdir, histogram_freq=1)
 history_fit = model.fit(ds_train,
                         epochs=10,
                         validation_data=ds_test,
-                        callbacks=[tensorboard_callback],  # Called on batch ends or other certain timepoint
+                        # Called on batch ends or other certain timepoint
+                        callbacks=[tensorboard_callback],
                         workers=4,
                         )
 
@@ -153,13 +155,14 @@ def plot_metric(history, indicator):
 # plot_metric(history_fit, "loss")
 # plot_metric(history_fit, "accuracy")
 evaluation = model.evaluate(ds_test, workers=4)
-print("Loss: {loss}  Accuracy: {acc}".format(loss=evaluation[0], acc=evaluation[1]))
+print("Loss: {loss}  Accuracy: {acc}".format(
+    loss=evaluation[0], acc=evaluation[1]))
 
 '''
 6. Use the Model
 '''
 
-answer = model.predict(ds_test)
+# answer = model.predict(ds_test)
 
 # for x, y in ds_test.take(1):
 #     print(model.predict_on_batch(x[0:20]))  # Or model.predict(ds_test)

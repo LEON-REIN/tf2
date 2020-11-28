@@ -105,7 +105,7 @@ model.compile(optimizer='adam',
               metrics=['AUC'])  # One kind of evaluation function -- AUC
 
 '''
-4. Train the Model
+4. Train the Model(With model.fit())
 '''
 
 history_fit = model.fit(to_train, ans_train,

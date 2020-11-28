@@ -28,10 +28,12 @@ dataset = tf.data.Dataset.from_tensor_slices(
 dataset = dataset.batch(3)
 # dataset = dataset.shuffle(buffer_size=2)
 # dataset = dataset.prefetch(2)
+print("There are", len(list(dataset.unbatch())), "samples.")  # Show number of samples
 dataset = dataset.take(1)  # Only take 1 batch
-for a, b in dataset.enumerate():
-    print('?????', a, "HHH", b)
+# print("There are", len(list(dataset.unbatch())), "samples right now.")
+for a, b in dataset:
+    print('?????\n', a, "\n!!!!!!!\n", b)
 print('*****************')
-aa = list(dataset.as_numpy_iterator())
+aa = list(dataset.as_numpy_iterator())  # or "list(dataset)"
 print(aa)
 
